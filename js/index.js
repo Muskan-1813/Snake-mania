@@ -152,3 +152,13 @@ const speedSelect = document.getElementById('speedSelect');
 speedSelect.addEventListener('change', (e) => {
     speed = parseInt(e.target.value); // Dropdown se selected value ko speed mein set karo
 });
+
+// Speed selector
+const speedSelect = document.getElementById('speedSelect');
+speedSelect.addEventListener('change', (e) => {
+ speed = parseInt(e.target.value); // Set selected speed
+ speedSelect.disabled = true; // Disable the dropdown
+});
+document.getElementById('enableSpeedSelect').addEventListener('click', () => {
+ speedSelect.disabled = false;
+});
