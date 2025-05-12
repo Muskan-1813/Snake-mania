@@ -147,11 +147,7 @@ window.addEventListener('keydown', e =>{
     }
 
 });
-// Speed selector
-const speedSelect = document.getElementById('speedSelect');
-speedSelect.addEventListener('change', (e) => {
-    speed = parseInt(e.target.value); // Dropdown se selected value ko speed mein set karo
-});
+
 
 // Speed selector
 const speedSelect = document.getElementById('speedSelect');
